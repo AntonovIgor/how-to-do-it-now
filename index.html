@@ -5,14 +5,58 @@
         <title>Привет, haJS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./js/remodal-1.1.1/dist/remodal.css">
+        <link rel="stylesheet" href="./js/remodal-1.1.1/dist/remodal-default-theme.css">
     </head>
-    <body>
+    <body>        
         <main class="page-content">
+            <div class="remodal" data-remodal-id="modal">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>haJS #4</h1>
+                <p>Напоминаем, четвертый haJS состоится уже завтра (03.02.18), и поскольку вы зарегистрировались одним из первых, сообщаем, что место проведения мероприятия было изменено на “Chester Art Pub”  (ул. Ленинградская 18). Мы сразу написали об этом в наших группах, но переживаем, что в суматохе будней вы могли пропустить объявление.</p>
+                <p>Увидимся завтра. Продуктивной пятницы!</p>
+                <br>
+                <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+            </div>
             <div class="welcome  page-content__inner">
                 <img class="welcome__promo" src="./img/hajs-promo.jpg" width="900">
                 <button class="btn welcome__btn--promo  page-content__promo_btn">Привет, haJS #4!</button>
             </div>
         </main>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/remodal-1.1.1/dist/remodal.min.js"></script>
+        <script>
+            var inst = $('[data-remodal-id=modal]').remodal();           
+
+            $('.page-content__promo_btn').on('click', function() {
+                inst.open();    
+            });
+
+            $(document).on('open', '.remodal', function () {
+               console.log('open');
+            });
+
+            $(document).on('opened', '.remodal', function () {
+                console.log('opened');
+            });
+
+            $(document).on('close', '.remodal', function () {
+                console.log('close');
+            });
+
+            $(document).on('closed', '.remodal', function () {
+                console.log('closed');
+            });
+
+            $(document).on('confirm', '.remodal', function () {
+                console.log('confirm');
+            });
+
+            $(document).on('cancel', '.remodal', function () {
+                console.log('cancel');
+            });    
+        </script>
     </body>
 
 </html>
