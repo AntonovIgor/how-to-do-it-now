@@ -1,18 +1,9 @@
-'use strict';
+var randomNumber = function(min, max) {
+    return Math.floor(min + Math.random() * (max - min));
+}   
 
-(function() {
-
-    var randomNumber = function(min, max) {
-        return Math.floor(min + Math.random() * (max - min));
-    }   
-
-    var sumIt = function(a, b) {
-        return a + b;
-    }
-
-    window.utils = {
-        randomNumber,
-        sumIt
-    }
+var sumIt = function(a, b) {
+    return a + b;
+}
     
-})();
+export { randomNumber, sumIt };
