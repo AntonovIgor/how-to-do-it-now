@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AntonovIgor/how-to-do-it-now/issues"
   },
-  "homepage": "https://github.com/AntonovIgor/how-to-do-it-now#readme"
+  "homepage": "https://github.com/AntonovIgor/how-to-do-it-now#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
