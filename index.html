@@ -26,54 +26,9 @@
         </main>
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/remodal-1.1.1/dist/remodal.min.js"></script>
-        <script>
-            var remodalText = $('.remodal__text');
-            var MESSAGES = [
-                'Первое бесполезное сообщение',
-                'Второе бесползеное сообщение',
-                'Третье бесполезное сообщение',
-                'Еще одна строка'
-            ];
-
-            var sumIt = function(a, b) {
-                return a + b;
-            }
-
-            var randomNumber = function(min, max) {
-                return Math.floor(min + Math.random() * (max - min));
-            }             
-
-            var inst = $('[data-remodal-id=modal]').remodal();   
-
-            $('.page-content__promo_btn').on('click', function() {
-                
-                inst.open();    
-            });
-
-            $(document).on('open', '.remodal', function () {
-               console.log('open');
-            });
-
-            $(document).on('opened', '.remodal', function () {
-                console.log('opened');
-            });
-
-            $(document).on('close', '.remodal', function () {
-                console.log('close');
-            });
-
-            $(document).on('closed', '.remodal', function () {
-                console.log('closed');
-            });
-
-            $(document).on('confirm', '.remodal', function () {
-                console.log('confirm');
-            });
-
-            $(document).on('cancel', '.remodal', function () {
-                console.log('cancel');
-            });    
-        </script>
+        <script src="./js/utils.js"></script>
+        <script src="./js/messages.js"></script>
+        <script src="./js/app.js"></script>       
     </body>
 
 </html>
