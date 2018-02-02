@@ -1,0 +1,19 @@
+{
+  "name": "how-to-do-it-now",
+  "version": "1.0.0",
+  "description": "Демонстрационный проект к докладу \"Фундамент для современного веб-приложения\"",
+  "main": " app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonovIgor/how-to-do-it-now.git"
+  },
+  "author": "Igor Antonov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntonovIgor/how-to-do-it-now/issues"
+  },
+  "homepage": "https://github.com/AntonovIgor/how-to-do-it-now#readme"
+}
