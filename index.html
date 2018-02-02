@@ -35,7 +35,13 @@
                 'Еще одна строка'
             ];
 
-             
+            var sumIt = function(a, b) {
+                return a + b;
+            }
+
+            var randomNumber = function(min, max) {
+                return Math.floor(min + Math.random() * (max - min));
+            }             
 
             var inst = $('[data-remodal-id=modal]').remodal();   
 
